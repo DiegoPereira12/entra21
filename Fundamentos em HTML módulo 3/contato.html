@@ -19,7 +19,22 @@
         <input type="radio" name="horario" value="manha" /> Manhã
         <input type="radio" name="horario" value="tarde" /> Tarde
         <input type="radio" name="horario" value="noite" /> Noite <br/>
-        <textarea cols="40" role="20"></textarea>
+        <textarea cols="40" role="20"></textarea><br/>
+        <select name="cidade">
+            <option value="">Selecione a cidade</option>
+            <option value="Blumenau">Blumenau</option>
+            <option value="Florianópolis">Florianópolis</option>
+            <option value="Joinville">Joinville</option>
+        </select><br/>
+        Selecione País <input list="país" name="país" />
+        <datalist id="país">
+            <option value="Brasil">Brasil</option>
+            <option value="Portugal">Portugal</option>
+            <option value="França">França</option>
+        </datalist><br/>
+        <button type="button">Outra ação</button>
+        <button type="reset">Limpar</button>
+        <button type="submit">Enviar</button>
     </form>
 </body>
 </html>
