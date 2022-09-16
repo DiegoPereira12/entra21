@@ -1,0 +1,17 @@
+/*CREATE TABLE nome_tabela (
+campo1 smallint,
+campo2 numeric(5,2),
+campo3 varchar(20),
+campo4 char(3)
+); */
+
+DESCRIBE nome_tabela;
+
+
+ALTER TABLE nome_tabela modify campo1 smallint not null;
+ALTER TABLE nome_tabela modify campo3 varchar(20) default 'Valor Padrão';
+ALTER TABLE nome_tabela modify campo4 char(5) not null default 'ABCDE';
+
+DROP TABLE nome_tabela;
+
+show tables;
