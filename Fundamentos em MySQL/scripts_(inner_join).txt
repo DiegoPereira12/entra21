@@ -1,0 +1,19 @@
+use loja;
+
+select id_cad_estado, nome_cad_estado from cad_estados;
+
+insert into cad_estados (nome_cad_estado) values ('Rio Grande do Sul');
+
+select * from cad_cidades;
+
+insert into cad_cidades (nome_cad_cidade, id_cad_estado)
+	values('Blumenau', 2),
+		  ('Porto Alegre', 3),
+          ('Joinvile',2),
+          ('Gramado',3);
+
+select CIDADE.nome_cad_cidade, ESTADO.nome_cad_estado from CAD_CIDADES CIDADE
+inner join cad_estados ESTADO on (ESTADO.id_cad_estado = CIDADE.id_cad_estado)
+order by ESTADO.nome_cad_estado;
+
+-- Não é necessário utilizar o inner, pode utilizar direto o join
